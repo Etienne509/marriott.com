@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Officiel | Marriott Port-au-Prince</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader-content text-center">
+            <div class="spinner-luxury mb-3"></div>
+            <h2 class="text-gold">MARRIOTT</h2>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" height="45" alt="Marriott Logo" class="logo-img">
+                <span class="logo-text">MARRIOTT <span class="text-marriott">HOTEL</span></span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-outline-gold btn-sm rounded-circle"><i class="fas fa-sun"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding container style-form-page" style="margin-top:100px;">
+        <div class="row g-5">
+            <div class="col-lg-8 mx-auto scroll-animate text-center mb-4">
+                <h2 class="text-dynamic uppercase display-6">Relations <span class="text-gold">Clientèle</span></h2>
+                <div class="divider mx-auto"></div>
+                <p class="rich-text mx-auto" style="max-width: 700px;">Notre équipe de conciergerie et de relations publiques traite vos requêtes avec célérité 24/7. Pour toute demande d'accès VIP, événement spécifique ou collaboration corporative, écrivez-nous.</p>
+                
+                <div class="row mt-5 text-dynamic">
+                    <div class="col-md-6 mb-3">
+                        <h5 class="text-marriott mb-2 uppercase"><i class="fas fa-map-marker-alt me-2"></i>Adresse</h5>
+                        <p class="small">147, Avenue Jean Paul II, Haut Turgeau, Port-au-Prince, Haïti.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h5 class="text-marriott mb-2 uppercase"><i class="fas fa-phone-alt me-2"></i>Téléphone</h5>
+                        <p class="small">+509 28 14 2800</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 mx-auto scroll-animate mb-5">
+                <div class="p-5 stat-bg border border-gold rounded shadow-lg">
+                    <h4 class="text-gold uppercase mb-4 text-center">Formulaire de Contact Sécurisé</h4>
+
+                    <form id="intelligentContactForm" novalidate>
+                        <div class="mb-4">
+                            <label class="form-label text-light-dynamic small uppercase fw-bold">Nom Complet</label>
+                            <input type="text" id="contactName" class="form-control custom-input shadow-none" required minlength="4">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-light-dynamic small uppercase fw-bold">Adresse Électronique</label>
+                            <input type="email" id="contactEmail" class="form-control custom-input shadow-none" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-light-dynamic small uppercase fw-bold">Numéro de Téléphone</label>
+                            <input type="tel" id="contactPhone" class="form-control custom-input shadow-none" placeholder="Ex: +50937001122" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-light-dynamic small uppercase fw-bold">Message</label>
+                            <textarea id="contactMessage" class="form-control custom-input shadow-none" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-marriott w-100 py-3 uppercase fw-bold mt-2">
+                            <i class="fas fa-paper-plane me-2"></i>Transmettre la demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTopBtn" class="btn btn-marriott rounded-circle"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0 footer-credit small">&copy; 2026 Marriott Port-au-Prince | Conçu par Etienne | Génie Informatique</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

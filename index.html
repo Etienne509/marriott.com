@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Marriott Port-au-Prince</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader-content text-center">
+            <div class="spinner-luxury mb-3"></div>
+            <h2 class="text-gold tracking-wide">MARRIOTT</h2>
+            <p class="text-muted small uppercase">Chargement de l'excellence...</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" height="45" alt="Marriott Logo" class="logo-img">
+                <span class="logo-text">MARRIOTT <span class="text-marriott">HOTEL</span></span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-outline-gold btn-sm rounded-circle" title="Changer d'ambiance">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('img/hero-home.jpg');">
+        <div class="container text-center hero-content">
+            <h1 class="display-3 fw-bold text-white uppercase animate-up">Bienvenue chez vous</h1>
+            <p class="lead text-gold mt-3 fs-4 animate-up-delay">
+                Le prestige international rencontre <span class="typing-effect" data-strings='["l’hospitalité Haïtienne.", "l’élégance de Turgeau.", "l’excellence absolue."]'></span>
+            </p>
+        </div>
+    </header>
+
+    <section class="booking-container container">
+        <div class="booking-card p-4 shadow-lg rounded">
+            <h4 class="text-gold mb-4 uppercase text-center"><i class="fas fa-calendar-alt me-2"></i>Réservation en Ligne</h4>
+            <form id="advancedBookingForm" novalidate>
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-3 col-6">
+                        <label class="form-label text-light small uppercase fw-bold">Arrivée <small style="color:var(--gold);">↘ 📅</small></label>
+                        <input type="date" id="checkInDate" class="form-control custom-input shadow-none" required>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <label class="form-label text-light small uppercase fw-bold">Départ <small style="color:var(--gold);">↘ 📅</small></label>
+                        <input type="date" id="checkOutDate" class="form-control custom-input shadow-none" required>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <label class="form-label text-light small uppercase fw-bold">Type de Suite</label>
+                        <select id="roomTypeSelect" class="form-select custom-input shadow-none" required>
+                            <option value="150" data-name="Chambre Standard">Standard ($150)</option>
+                            <option value="250" data-name="Chambre Deluxe">Deluxe ($250)</option>
+                            <option value="500" data-name="Suite Présidentielle">Présidentielle ($500)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div id="livePriceContainer" class="text-center text-white mb-2 py-1 bg-black-trans rounded border border-secondary" style="display:none;">
+                            <span class="small text-muted">Est. :</span> <span id="livePriceValue" class="fw-bold text-gold">0</span>$
+                        </div>
+                        <button type="submit" class="btn btn-marriott w-100 fw-bold uppercase py-2"><i class="fas fa-check-circle me-1"></i>Réserver</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-padding container text-center scroll-animate mt-5">
+        <h2 class="uppercase text-dynamic">Gestion de vos <span class="text-marriott">Réservations</span></h2>
+        <div class="divider"></div>
+        <p class="description-text max-w-700 mx-auto mb-5">Suivez vos demandes de séjours en temps réel. Vos données sont sauvegardées localement de manière sécurisée.</p>
+
+        <div class="row g-4 mb-4 text-center">
+            <div class="col-md-4">
+                <div class="stat-box p-3 stat-bg border border-gold-dim rounded">
+                    <h3 id="statTotalBookings" class="text-gold fw-bold">0</h3>
+                    <p class="text-muted uppercase small mb-0">Séjours Réservés</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box p-3 stat-bg border border-gold-dim rounded">
+                    <h3 id="statTotalNights" class="text-gold fw-bold">0</h3>
+                    <p class="text-muted uppercase small mb-0">Nuits Cumulées</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box p-3 stat-bg border border-gold-dim rounded">
+                    <h3 id="statTotalInvested" class="text-gold fw-bold">0$</h3>
+                    <p class="text-muted uppercase small mb-0">Montant Total</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive rounded border border-secondary">
+            <table class="table custom-table table-striped align-middle mb-0" id="dashboardTable">
+                <thead>
+                    <tr class="text-gold uppercase small tracking-wide">
+                        <th>Hébergement</th>
+                        <th>Arrivée</th>
+                        <th>Départ</th>
+                        <th>Nuits</th>
+                        <th>Coût Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="dashboardGridBody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section-padding stat-bg text-center scroll-animate mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h2 class="counter text-gold display-4 fw-bold" data-target="175">0</h2>
+                    <p class="text-muted uppercase small">Chambres et Suites</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter text-gold display-4 fw-bold" data-target="5">0</h2>
+                    <p class="text-muted uppercase small">Suites Présidentielles</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter text-gold display-4 fw-bold" data-target="99">0</h2>
+                    <p class="text-muted uppercase small">% Personnel Haïtien</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter text-gold display-4 fw-bold" data-target="200">0</h2>
+                    <p class="text-muted uppercase small">Producteurs Partenaires</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container scroll-animate mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center mb-5">
+                <h2 class="text-dynamic uppercase">Un havre de paix <span class="text-marriott">Sécurisé</span></h2>
+                <div class="divider mx-auto"></div>
+                <p class="rich-text">Situé au cœur de Haut Turgeau, le Marriott Port-au-Prince offre un cadre hautement sécurisé, calme et verdoyant. Notre infrastructure moderne répond aux normes internationales les plus strictes en matière de sécurité et de confort antisismique.</p>
+                <p class="rich-text">Profitez de nos jardins suspendus, de notre piscine chauffée à débordement et d'une connexion Wi-Fi haut débit par fibre optique redondante, idéale pour les professionnels de l'ingénierie et de la technologie.</p>
+            </div>
+            <div class="col-lg-10 mx-auto">
+                <img src="img/ext-1.jpg" class="img-premium mx-auto d-block" alt="Marriott Extérieur">
+            </div>
+        </div>
+    </section>
+
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 10000;"></div>
+    <button id="backToTopBtn" class="btn btn-marriott rounded-circle" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0 footer-credit small">&copy; 2026 Marriott Port-au-Prince | Conçu par Etienne | Génie Informatique</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

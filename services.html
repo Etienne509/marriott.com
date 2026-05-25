@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Premium | Marriott Port-au-Prince</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen"><div class="loader-content text-center"><div class="spinner-luxury mb-3"></div><h2 class="text-gold">MARRIOTT</h2></div></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" height="45" alt="Marriott Logo" class="logo-img">
+                <span class="logo-text">MARRIOTT <span class="text-marriott">HOTEL</span></span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><button id="theme-toggle" class="btn btn-outline-gold btn-sm rounded-circle"><i class="fas fa-sun"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero-services.jpg');">
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold text-white uppercase animate-up">Hébergement & Gastronomie</h1>
+            <p class="lead text-gold animate-up-delay">Des prestations cinq étoiles calibrées pour votre confort absolu.</p>
+        </div>
+    </header>
+
+    <section class="section-padding container scroll-animate mt-5">
+        <div class="row mb-5 pb-4 border-bottom border-secondary">
+            <div class="col-lg-10 mx-auto text-center mb-5">
+                <h2 class="text-dynamic uppercase">Le Restaurant <span class="text-marriott">La Sirène</span></h2>
+                <div class="divider mx-auto"></div>
+                <p class="rich-text">Découvrez une expérience gastronomique sans pareille à Port-au-Prince. Notre restaurant phare, "La Sirène", fusionne avec maestria l'art culinaire international et les épices envoûtantes de la tradition créole. Poissons frais de la côte sud, griot revisité en haute cuisine et buffet déjeuner somptueux vous y attendent.</p>
+                <p class="rich-text">Notre bar lounge propose également une collection exclusive de cocktails signatures élaborés à partir du prestigieux rhum national Barbancourt, parfait pour sceller vos rendez-vous d'affaires au bord de l'eau.</p>
+            </div>
+            <div class="col-lg-10 mx-auto">
+                <img src="img/buffet-1.jpg" class="img-premium mx-auto d-block" alt="Restaurant La Sirene">
+            </div>
+        </div>
+
+        <div class="row pt-4 scroll-animate mb-5">
+            <div class="col-lg-10 mx-auto text-center mb-5">
+                <h2 class="text-dynamic uppercase">Sanctuaire de <span class="text-gold">Repos</span></h2>
+                <div class="divider mx-auto"></div>
+                <p class="rich-text">Nos 175 chambres, incluant nos suites exécutives, offrent un écrin de calme et de technologie. Chaque pièce intègre la literie brevetée 'Marriott Revive', une insonorisation acoustique poussée, un système de climatisation individuel intelligent et des baies vitrées panoramiques donnant sur les mornes environnants ou la baie.</p>
+                <p class="rich-text">Un room service d'élite opère 24 heures sur 24 pour satisfaire les moindres exigences des voyageurs internationaux et des cadres supérieurs.</p>
+            </div>
+            <div class="col-lg-10 mx-auto">
+                <img src="img/room-1.jpg" class="img-premium mx-auto d-block" alt="Suite Luxe">
+            </div>
+        </div>
+    </section>
+
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+    <button id="backToTopBtn" class="btn btn-marriott rounded-circle"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0 footer-credit small">&copy; 2026 Marriott Port-au-Prince | Conçu par Etienne | Génie Informatique</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

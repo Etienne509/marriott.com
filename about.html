@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | Marriott Port-au-Prince</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen"><div class="loader-content text-center"><div class="spinner-luxury mb-3"></div><h2 class="text-gold">MARRIOTT</h2></div></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" height="45" alt="Marriott Logo" class="logo-img">
+                <span class="logo-text">MARRIOTT <span class="text-marriott">HOTEL</span></span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><button id="theme-toggle" class="btn btn-outline-gold btn-sm rounded-circle"><i class="fas fa-sun"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero-about.jpg');">
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold text-white uppercase animate-up">Notre Histoire & Vision</h1>
+            <p class="lead text-gold animate-up-delay">Un engagement fort pour le développement durable en Haïti.</p>
+        </div>
+    </header>
+
+    <section class="section-padding container scroll-animate mt-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center mb-5">
+                <h2 class="text-dynamic uppercase">Symbole de <span class="text-marriott">Résilience</span></h2>
+                <div class="divider mx-auto"></div>
+                <p class="rich-text">Inauguré avec la volonté d'ancrer le luxe international au cœur de la capitale, le Marriott Port-au-Prince s'est imposé comme un pilier économique majeur. Fier de valoriser les talents locaux, notre établissement emploie 99% de professionnels haïtiens, formés aux standards de rigueur et d'élégance du groupe mondial.</p>
+                <p class="rich-text">Notre structure intègre également une dimension culturelle unique : notre hall d'accueil et nos espaces communs font office de galerie permanente, exposant les sculptures en fer forgé de la Croix-des-Bouquets et les toiles des plus grands maîtres haïtiens.</p>
+            </div>
+            <div class="col-lg-10 mx-auto mb-5">
+                <img src="img/ext-2.jpg" class="img-premium mx-auto d-block" alt="Vision d'avenir">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding stat-bg text-center scroll-animate">
+        <div class="container">
+            <h2 class="text-gold uppercase">Responsabilité Écologique</h2>
+            <div class="divider"></div>
+            <p class="rich-text max-w-700 mx-auto text-center">À l'ère de l'innovation technologique, la durabilité est primordiale. L'hôtel est fier de posséder l'une des plus grandes installations solaires thermiques de la région, couvrant la quasi-totalité des besoins en eau chaude du complexe routier.</p>
+            <p class="rich-text max-w-700 mx-auto text-center mt-3">De plus, notre circuit d'approvisionnement soutient directement plus de 200 micro-agriculteurs locaux basés dans les hauteurs fertiles de Kenscoff, garantissant des ingrédients biologiques frais du potager directement dans vos assiettes.</p>
+        </div>
+    </section>
+
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+    <button id="backToTopBtn" class="btn btn-marriott rounded-circle"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0 footer-credit small">&copy; 2026 Marriott Port-au-Prince | Conçu par Etienne | Génie Informatique</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
